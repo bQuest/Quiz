@@ -23,21 +23,24 @@
         android:text="1. Which of the following is true?"/>
 
     <RadioGroup
+        android:id="@+id/rgmain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonTrue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kotlin is an official language to develop Android Apps." />
 
         <RadioButton
+            android:id="@+id/radioButtonFalse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Java is an official language to develop Android Apps." />
 
         <RadioButton
+            android:id="@+id/radioButtonWrong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Swift is an official language to develop Android Apps." />
@@ -50,19 +53,34 @@
         android:text="2. Which of the following programming languages can be used to create Android apps in Android studio?"/>
 
     <CheckBox
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="English" />
+        android:id="@+id/checkboxEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English" />
 
     <CheckBox
+        android:id="@+id/checkboxKotlin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kotlin" />
 
     <CheckBox
+        android:id="@+id/checkboxJava"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Java" />
 
-
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+    <TableRow>
+        <Button
+            android:id="@+id/button_submit"
+            android:text="Submit"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:text="Reset"/>
+    </TableRow>
+</TableLayout>
 </LinearLayout>
